@@ -1,0 +1,280 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+.body-container{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(239, 246, 255);
+	min-height: 100vh;
+}
+
+
+
+.carousel-item{
+	height: 70vh;
+}
+
+.carousel-caption{
+	bottom: 10%;
+	color: rgb(255, 255, 255);
+	z-index: 2;
+}
+
+.carousel-caption h5{
+	font-family: 'Anton', sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.carousel-caption .name-section{
+	display: block;
+	padding-top: 10%;
+	
+}
+.name-section p{
+	color: antiquewhite;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 25px;
+}
+.carousel-caption h5 .span-style{
+	color: rgb(238, 246, 18);
+	font-size: 65px;
+}
+.name-section .p1{
+	float: left;
+
+}
+.name-section .p2{
+	float: right;
+}
+
+
+.carousel-item::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	z-index:1 ;
+
+}
+
+#carouselExampleFade .custom-shape-divider-bottom-1671859705 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+	z-index: 3;
+}
+
+#carouselExampleFade .custom-shape-divider-bottom-1671859705 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 61px;
+}
+
+#carouselExampleFade .custom-shape-divider-bottom-1671859705 .shape-fill {
+    fill:  rgb(239, 246, 255);
+}
+
+
+.volleyball-into{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	box-shadow: 0 0 30px black;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-right: 2%;
+	padding-left: 2%;
+	
+}
+
+
+.volleyball-header h1{
+	font-family: 'Staatliches', cursive;
+	font-size: 70px;	
+}
+.volleyball-content{
+	align-items: center;
+}
+
+
+.volleyball-img img{
+	display: none;
+}
+
+.volleyball-img img.image-active{
+	display: block;
+	width: 300px;
+	height: 300px;
+	border-radius: 35%;
+	margin: auto;
+	object-fit: cover;
+
+}
+
+
+.volleyball-discription p{
+	color: rgb(71, 70, 70);
+	font-size: 18px;
+	font-family: 'Lacquer', cursive;
+}
+
+.table-section{
+	width: 90%;
+	margin: auto;
+
+}
+
+
+.header-tabel h1{
+	font-family: 'Staatliches', cursive;
+	font-size: 50px;	
+	text-align: center;
+}
+
+.table-section tr:hover{
+	background-color: rgb(89, 116, 167);
+	color: rgb(255, 255, 255);
+}
+
+.table thead{
+	background-color: rgb(8, 1, 143);
+	color: aliceblue;
+}
+
+.row-colored-1{
+	background-color: rgb(220, 228, 245);
+}
+.row-colored-2{
+	background-color: rgb(145, 179, 241);
+}
+
+
+.graphs-into{
+
+	margin-top: 4%;
+	padding-bottom: 5%;
+
+	
+}
+
+
+.graphs-header h1{
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	font-size: 50px;	
+}
+
+
+
+.pie-graph-class h4{
+	padding-top: 10px;
+	text-align: center;
+}
+.bar-graph-class h4{
+	padding-top: 10px;
+	text-align: center;
+}
+.bar-graph-class{
+	margin: auto;
+}
+
+footer{
+	padding:15px 0;
+	background-color:#1a1818;
+	color:#e4e4e4;
+}
+
+footer h2{
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 40px;
+}
+
+footer ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.5;
+	margin-bottom:0;
+  }
+footer li {
+	padding:0 10px;
+  }
+
+footer .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+  }
+
+/* -- Responsive CSS -- */
+
+@media only screen and (max-width: 880px) and (min-width:620px){
+	.carousel-item{
+		height: 50vh;
+	}
+	.carousel-caption h5{
+		font-size: 40px;
+	}
+
+	.name-section p{
+		font-size: 18px;
+	}
+	.carousel-caption h5 .span-style{
+		font-size: 50px;
+	}
+	.volleyball-discription p{
+		text-align: center;
+	
+	}
+}
+
+
+@media only screen and (max-width: 620px){
+
+	.carousel-item{
+		height: 40vh;
+	}
+	.carousel-caption h5{
+		font-size: 25px;
+	}
+
+	.name-section p{
+		font-size: 10px;
+	}
+	.carousel-caption h5 .span-style{
+		font-size: 30px;
+	}
+
+	.carousel-caption .name-section{
+		display: block;
+		padding-top: 20%;
+		
+	}
+	#carouselExampleFade .custom-shape-divider-bottom-1671859705{
+		visibility: hidden;
+	}
+	.volleyball-discription p{
+		text-align: center;
+		
+	}
+
+}
