@@ -19,12 +19,43 @@ function changeSlide() {
 
 }
 
+datadisplay(1)
+
+function datadisplay(tbl){
+
+  const tabel = $("#tdata");
+  tabel.empty();
+
+  var cn1 =  document.getElementById("pie-graph");
+  cn1.remove()
+  var canv = document.createElement('canvas');
+  canv.id = 'pie-graph';
+  document.getElementById("pie-div").appendChild(canv);
+
+  
+
+  
+
+  var cn2 = document.getElementById("bar-graph");
+  cn2.remove();
+  var barcnv = document.createElement('canvas');
+  barcnv.id = 'bar-graph';
+  document.getElementById("bar-div").appendChild(barcnv);
 
 
+  var role = tbl;
+  var url = "https://kulpiq.github.io/EDI/json_data/dataset_1.json"
+  if (role==1){
+    url = "https://kulpiq.github.io/EDI/json_data/dataset_1.json"
+  }else if(role == 2){
+    url = "https://kulpiq.github.io/EDI/json_data/dataset_2.json"
+  }else if(role == 3){
+    url = "https://kulpiq.github.io/EDI/json_data/dataset_3.json"
+  }
 
-$.ajax({
+  $.ajax({
     type: 'GET',
-    url: 'https://my.api.mockaroo.com/vollayball_players.json?key=6af4afd0',
+    url: url,
     dataType: 'json',
     success: function(data) {
         GenderGraphs(data);
@@ -51,6 +82,11 @@ $.ajax({
 
     }
 });
+
+  
+}
+
+
 
 function GenderGraphs(data){
   MaleCount = 0

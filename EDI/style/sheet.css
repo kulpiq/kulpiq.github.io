@@ -136,6 +136,9 @@
 .table-section{
 	width: 90%;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 }
 
@@ -145,6 +148,12 @@
 	font-size: 50px;	
 	text-align: center;
 }
+
+.btn-group{
+	width: 60%;
+	margin-bottom: 30px;
+}
+
 
 .table-section tr:hover{
 	background-color: rgb(89, 116, 167);
