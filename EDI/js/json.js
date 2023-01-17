@@ -19,7 +19,7 @@ function changeSlide() {
 
 }
 
-datadisplay(1)
+
 
 function datadisplay(tbl){
 
@@ -44,13 +44,13 @@ function datadisplay(tbl){
 
 
   var role = tbl;
-  var url = "https://kulpiq.github.io/EDI/json_data/dataset_1.json"
+  var url = "https://kulpiq.github.io/EDI/json_data/dataset_1.json";
   if (role==1){
-    url = "https://kulpiq.github.io/EDI/json_data/dataset_1.json"
+    url = "https://kulpiq.github.io/EDI/json_data/dataset_1.json";
   }else if(role == 2){
-    url = "https://kulpiq.github.io/EDI/json_data/dataset_2.json"
+    url = "https://kulpiq.github.io/EDI/json_data/dataset_2.json";
   }else if(role == 3){
-    url = "https://kulpiq.github.io/EDI/json_data/dataset_3.json"
+    url = "https://kulpiq.github.io/EDI/json_data/dataset_3.json";
   }
 
   $.ajax({
@@ -86,12 +86,14 @@ function datadisplay(tbl){
   
 }
 
+datadisplay(1);
+
 
 
 function GenderGraphs(data){
-  MaleCount = 0
-  FemaleCount = 0
-  NonBinaryCount = 0
+  var MaleCount = 0;
+  var FemaleCount = 0;
+  var NonBinaryCount = 0;
 
   data.forEach(function(dt){
     if (dt.gender=='Male'){
@@ -110,13 +112,13 @@ function GenderGraphs(data){
 }
 
 function HeightGraphs(data){
-  height1 = 0
-  height2 = 0
-  height3 = 0
-  height4 = 0
-  height5 = 0
-  height6 = 0
-  height7 = 0
+  var height1 = 0;
+  var height2 = 0;
+  var height3 = 0;
+  var height4 = 0;
+  var height5 = 0;
+  var height6 = 0;
+  var height7 = 0;
 
   data.forEach(function(dt){
     if (dt.height_in_cm > 170 && dt.height_in_cm <= 180){
